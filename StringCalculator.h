@@ -5,7 +5,10 @@
 
 class StringCalculator {
 public:
-    // CCN = 1
+    // Returns the sum according to the defined rules.
+    // Throws std::runtime_error for:
+    //   - negatives (message: "negatives not allowed: <list>")
+    //   - invalid delimiter header(s)
     static int Add(const std::string& input);
 };
 
